@@ -3,9 +3,35 @@
 
 /* gallery */
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 27px;
+    gap: 20px;
+}
 
+.img1, .img2, .img3, .img4, .img5, .img6 {
+    height: 413px;
+    width: 413px;
+    border-radius: 15px;
+}
 
 /* cards */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.card-footer span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card-footer img {
+    cursor: pointer;
+}
 
 
 /* footer */
