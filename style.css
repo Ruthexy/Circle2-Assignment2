@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 /* header */
 *{
@@ -10,86 +11,91 @@ body{
     width: 1440px;
     height: 1416px;
     background: rgba(252, 245, 229, 1);
-}
 
-main {
-    background: rgba(252, 245, 229, 1);
-    min-height: 100vh;
+body {
+  background: rgba(252, 245, 229, 1);
+  width: 1440px;
+  height: 1416px;
+
 }
 
 /*Header*/
-.logo-icon{
-    width: 1440px;
-    height: 46px;
-    justify-content: space-between;
-    /* border-bottom-width: 1px; */
-    padding: 10px 80px;
-    background: rgba(255, 255, 255, 0.8);
+.logo-icon {
+  width: 1440px;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+  
+  main {
+  background: rgba(252, 245, 229, 1);
+  min-height: 100vh;
 }
 
- /*Profile Section*/
+/*Profile Section*/
 
 .profile {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 1280px;
-    height: 210px;
-    margin-top: 50px;
-    margin-left: 80px;
-    border-bottom: 1px solid rgba(33, 33, 33, 0.4);
-    padding-bottom: 20px;
-    background: transparent;
-    position: relative; /* Ensures absolute positioning works */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 1100px;
+  height: 210px;
+  margin-top: 50px;
+  margin-left: 80px;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.4);
+  padding-bottom: 20px;
+  background: transparent;
+  position: relative; /* Ensures absolute positioning works */
 }
 
 /* Profile Image */
 .profile > img {
-    width: 190px;
-    height: 190px;
-    border-radius: 12px;
-    margin-top: -80px;
+  width: 190px;
+  height: 190px;
+  border-radius: 12px;
+  margin-top: -80px;
 }
 
 /* Profile Details */
 .profile-details {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    min-width: 0;
-    margin-top: -80px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  margin-top: -80px;
 }
 
 .profile-details h2 {
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 100%;
-    width: 420px;
-    height: 96px;
-    margin-left: 20px;
-    white-space: wrap;
-    overflow: visible;
-    text-overflow: ellipsis;
-    max-width: 600px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  width: 420px;
+  height: 96px;
+  margin-left: 20px;
+  white-space: wrap;
+  overflow: visible;
+  text-overflow: ellipsis;
+  max-width: 600px;
 }
 
 .profile-details p {
-    width: 420px;
-    height: 48px;
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0;
-    color: rgba(33, 33, 33, 0.7);
-    max-width: 600px;
-    margin-left: 20px;
-    white-space: wrap;
-    overflow: visible;
-    text-overflow: ellipsis;
+  width: 420px;
+  height: 48px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: rgba(33, 33, 33, 0.7);
+  max-width: 600px;
+  margin-left: 20px;
+  white-space: wrap;
+  overflow: visible;
+  text-overflow: ellipsis;
 }
 
 /* Edit Profile */
@@ -113,55 +119,55 @@ main {
 
 /* New Post Button */
 .new-post {
-    position: absolute;
-    right:0; /* Adjust distance from the right */
-    top: 80%; /* Align vertically */
-    transform: translateY(-55%); /* Center vertically */
+  position: absolute;
+  right: 0; /* Adjust distance from the right */
+  top: 80%; /* Align vertically */
+  transform: translateY(-55%); /* Center vertically */
 }
 
 .new-post button {
-    width: 157px;
-    height: 52px;
-    padding: 18px 32px;
-    gap: 8px;
-    border-radius: 8px;
-    color: rgba(252, 245, 229, 1);
-    background: rgba(33, 33, 33, 1);
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s;
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0;
+  width: 157px;
+  height: 52px;
+  padding: 18px 32px;
+  gap: 8px;
+  border-radius: 8px;
+  color: rgba(252, 245, 229, 1);
+  background: rgba(33, 33, 33, 1);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 .new-post-button {
-    background-color: #222;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: background-color 0.2s;
-  }
+  background-color: #222;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
 
-  .new-post-button:hover {
-    background-color: #444;
-  }
-  
-  /* For the plus icon */
-  .new-post-button::before {
-    content: "+";
-    font-size: 18px;
-    font-weight: 400;
-  }
+.new-post-button:hover {
+  background-color: #444;
+}
+
+/* For the plus icon */
+.new-post-button::before {
+  content: "+";
+  font-size: 18px;
+  font-weight: 400;
+}
 
 /* gallery */
 
@@ -173,41 +179,36 @@ main {
     gap: 20px;
     border-top: 1px solid rgba(33, 33, 33, 0.4);
     border-bottom: 1px solid rgba(33, 33, 33, 0.4);
-   
-}
+  }
 
-.img1, .img2, .img3, .img4, .img5, .img6 {
-    height: 413px;
-    width: 413px;
-    border-radius: 15px;
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  height: 413px;
+  width: 413px;
+  border-radius: 15px;
 }
-
 
 /* cards */
 .card-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0px; /*px on 0 is redundant*/
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px; /*px on 0 is redundant*/
 }
 
 .card-footer span {
-    font-weight: 500;
-    font-size: 20px;
-    font-family: 'Poppins'; /*no generic font-family here*/
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Poppins"; /*no generic font-family here*/
 }
 
 .card-footer img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-/* Logo */
-.logo-icon{
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin-top: 20px;
-  height: 40px; 
-}
 
 /* footer */
 .copyright {
@@ -217,117 +218,117 @@ main {
   color: rgba(33, 33, 33, 0.7);
   
 }
-
-@media (max-width: 480px){
-    body{
-        width: 480px;
-    }
-    .logo-icon{
-        width: 100%;
-        height: 40%;
-        margin-top: 0;
-        border-bottom-width: 1px;
-        background: rgba(255, 255, 255, 0.8);
-        margin-bottom: 20px;
-    }
-    .profile{
-        margin-top: 50px;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        margin-left: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        
-    }
-    /* Profile Image */
-    .profile > img {
-        width: 100px;
-        height: 100px;
-        border-radius: 12px;
-        margin-top: -25px;
-    }
-    /* Profile Details */
-    .profile-details {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        margin-top: 10px;
-    }
-    .profile-details h2 {
-        font-family: Poppins, sans-serif;
-        font-weight: 500;
-        font-size: 33px;
-        line-height: 90%;
-        height: auto;
-        margin-left: auto;
-        text-align: center;
-    }
-    .profile-details p {
-        width: auto;
-        height: auto;
-        font-family: Poppins, sans-serif;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 90%;
-        margin-left: auto;
-        text-align: center;
-        max-height: 68px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    .edit-profile{
-        text-align: center;
-        text-decoration: none;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .new-post{
-        width: 100%;
-        position: relative;
-        top: 0;
-    }
-    .new-post button {
-        width: 100%;
-        height: 40%;
-        text-align: center;
-        font-size: 20px;
-    }
-    .card-footer span{
-        margin: 0;
-        font-weight: 600;
-    }
-    .card-footer > img{
-        margin: 0;
-    }
-    .card-footer{
-        display: flex;
-        justify-content: space-between;
-    }
-    footer{
-        padding: 0 35px;
-    }
-    .copyright{
-        width: 100%;
-        text-align: center;
-        color: rgba(33, 33, 33, 0.7);
-        margin-bottom: 10px;
-        border-top: 1px solid rgba(33, 33, 33, 0.7);
-        padding: 20px 20px;
-    }
-}
-
-/* footer */
-.copyright {
-    place-items: center;
-    padding: 50px 0;
-  font-family: 'Poppins', sans-serif;
+.copyright p {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
   color: rgba(33, 33, 33, 0.7);
-  
 }
+
+@media (max-width: 480px) {
+  body {
+    width: 480px;
+  }
+  .logo-icon {
+    width: 100%;
+    height: 40%;
+    margin-top: 0;
+    border-bottom-width: 1px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+  }
+  .profile {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    height: auto;
+    justify-content: center;
+  }
+  /* Profile Image */
+  .profile > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    margin-top: -25px;
+  }
+  /* Profile Details */
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .profile-details h2 {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 90%;
+    height: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .profile-details p {
+    width: auto;
+    height: auto;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 90%;
+    margin-left: auto;
+    text-align: center;
+    max-height: 68px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .edit-profile {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .new-post {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .new-post button {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .card-footer span {
+    margin: 0;
+    font-weight: 600;
+  }
+  .card-footer > img {
+    margin: 0;
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer {
+    padding: 0 35px;
+  }
+  .copyright {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: rgba(33, 33, 33, 0.7);
+    margin-bottom: 10px;
+    border-top: 1px solid rgba(33, 33, 33, 0.7);
+    padding: 20px 20px;
+  }
+}
+
