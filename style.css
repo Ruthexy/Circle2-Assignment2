@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 /* header */
 *{
     box-sizing: border-box;
@@ -102,6 +102,13 @@ main {
 }
 
 /* Edit Profile */
+.edit-profile {
+    margin-left:; /* Adjusted to align with profile image */
+    position: relative;
+    right: 43%; /* Adjusted to align with profile image */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .edit-profile a {
     text-decoration: none;
     color: #222;
@@ -110,8 +117,8 @@ main {
     font-weight: bold;
     font-size: 16px;
     line-height: 100%;
-    margin-left: 20px;
     opacity: 0.8; 
+    
 }
 
 /* New Post Button */
@@ -167,7 +174,6 @@ main {
   }
 
 /* gallery */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap'); 
 
 .gallery {
     display: flex;
@@ -175,7 +181,9 @@ main {
     justify-content: center;
     padding: 20px 27px;
     gap: 20px;
+    border-top: 1px solid rgba(33, 33, 33, 0.4);
     border-bottom: 1px solid rgba(33, 33, 33, 0.4);
+   
 }
 
 .img1, .img2, .img3, .img4, .img5, .img6 {
@@ -202,16 +210,6 @@ main {
     cursor: pointer;
 }
 
-
-/* footer */
-.copyright {
-    place-items: center;
-    padding: 50px 0;
-  font-family: 'Poppins', sans-serif;
-  color: rgba(33, 33, 33, 0.7);
-  
-}
-
 /* Logo */
 .logo-icon{
   display: flex;
@@ -219,6 +217,15 @@ main {
   align-items: center; 
   margin-top: 20px;
   height: 40px; 
+}
+
+/* footer */
+.copyright {
+    text-align: center;
+    padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(33, 33, 33, 0.7);
+  
 }
 
 @media (max-width: 480px){
@@ -236,6 +243,7 @@ main {
     .profile{
         margin-top: 50px;
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -244,8 +252,7 @@ main {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 10px;
-        height: auto;
-        justify-content: center;
+        
     }
     /* Profile Image */
     .profile > img {
