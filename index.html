@@ -7,101 +7,96 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
+    <!-- Header -->
+    <header>
+      <div class="logo-icon">
       <h1>
-        <img src="assets/Logo.jpg" alt="logo" />
+        <img src="assets/Logo.jpg" alt="spots-logo" />
       </h1>
-    </div>
+      </div>
+    </header>
 
-    <!-- profile -->
-    <div class="profile">
-      <img src="assets/Avatar@2x.png" alt="Profile photo" />
-      <div class="profile-details">
-        <h2>
-          Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon...
-        </h2>
-        <p>
-          Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
-          singer, record producer, and entrepreneur. An influential figure in
-          modern world...
-        </p>
-        <a href="#">Edit Profile</a>
-      </div>
-      <div class="new-post">
-        <button>+ New Post</button>
-      </div>
-    </div>
-    <!-- gallery -->
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="./assets/Image-1.png" alt="Val Thorens" />
-        <div class="card-footer">
-          <span>Val Thorens</span>
-          <img
-            width="20px"
-            height="20px"
-            src="./assets/LikeIcon.svg"
-            alt="heartIcon"
-          />
+    <!-- Main Content -->
+    <main>
+      <!-- Profile Section -->
+      <section class="profile">
+        <img src="assets/Avatar@2x.png" alt="Profile photo" />
+        <div class="profile-details">
+          <h2>
+            Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon...
+          </h2>
+          <p>
+            Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
+            singer, record producer, and entrepreneur. An influential figure in
+            modern world...
+            
+          </p>
+          <div class="edit-profile">
+          <a href="#">Edit Profile</a>
+          </div>
         </div>
-      </div>
-      <div class="gallery-item">
-        <img src="./assets/Image-2.png" alt="Restaurant terrace" />
-        <div class="card-footer">
-          <span>Restaurant terrace</span>
-          <img
-            width="20px"
-            height="20px"
-            src="./assets/LikeIcon.svg"
-            alt="heartIcon"
-          />
+        <div class="new-post">
+          <button>+ New Post</button>
         </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery" aria-label="Photo Gallery">
+        <article class="gallery-item">
+          <img src="./assets/Image-1.png" alt="Val Thorens" class="img1"/>
+          <footer class="card-footer">
+            <span>Val Thorens</span>
+            <img src="./assets/LikeIcon.svg" alt="Like icon" width="20px" height="20px" />
+          </footer>
+        </article>
+
+        <article class="gallery-item">
+          <img src="./assets/Image-2.png" alt="Restaurant terrace" class="img2"/>
+          <footer class="card-footer">
+            <span>Restaurant terrace</span>
+            <img src="./assets/LikeIcon.svg" alt="Like icon" width="20px" height="20px" />
+          </footer>
+        </article>
+
+        <article class="gallery-item">
+          <img src="./assets/Image-3.png" alt="An outdoor cafe" class="img3"/>
+          <footer class="card-footer">
+            <span>An outdoor cafe</span>
+            <img src="./assets/LikeIcon.svg" alt="Like icon" width="20px" height="20px" />
+          </footer>
+        </article>
+
+        <article class="gallery-item">
+          <img src="./assets/Image-4.png" alt="A very long bridge, over the forest..." class="img4"/>
+          <footer class="card-footer">
+            <span>A very long bridge, over the forest...</span>
+            <img src="./assets/LikeIcon.svg" alt="Like icon" width="20px" height="20px" />
+          </footer>
+        </article>
+
+        <article class="gallery-item">
+          <img src="./assets/Image-5.png" alt="Tunnel with morning light" class="img5"/>
+          <footer class="card-footer">
+            <span>Tunnel with morning light</span>
+            <img src="./assets/LikeIcon.svg" alt="Like icon" width="20px" height="20px" />
+          </footer>
+        </article>
+
+        <article class="gallery-item">
+          <img src="./assets/Image-6.png" alt="Mountain house" class="img6"/>
+          <footer class="card-footer">
+            <span>Mountain house</span>
+            <img src="./assets/LikeIcon.svg" alt="Like icon" width="20px" height="20px" />
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="copyright">
+      <p> 2024 © Spots</p>
       </div>
-      <div class="gallery-item">
-        <img src="./assets/Image-3.png" alt="An outdoor cafe" />
-        <div class="card-footer">
-          <span>An outdoor cafe</span>
-          <img
-            width="20px"
-            height="20px"
-            src="./assets/LikeIcon.svg"
-            alt="heartIcon"
-          />
-        </div>
-      </div>
-      <div class="gallery-item">
-        <img
-          src="./assets/Image-4.png"
-          alt="A very long bridge, over the forest..."
-        />
-        <div class="card-footer">
-          <span>A very long bridge, over the forest...</span>
-          <img
-            width="20px"
-            height="20px"
-            src="./assets/LikeIcon.svg"
-            alt="heartIcon"
-          />
-        </div>
-      </div>
-      <div class="gallery-item">
-        <img src="./assets/Image-5.png" alt="Tunnel with morning light" />
-        <div class="card-footer">
-          <span>Tunnel with morning light</span>
-          <img width="20px" height="20px" src="./assets/LikeIcon.svg" alt="heartIcon" />
-        </div>
-      </div>
-      <div class="gallery-item">
-        <img src="./assets/Image-6.png" alt="Mountain house" />
-        <div class="card-footer">
-          <span>Mountain house</span>
-          <img width="20px" height="20px" src="./assets/LikeIcon.svg" alt="heartIcon" />
-        </div>
-      </div>
-    </div>
-    <!-- footer -->
-     <div>
-      <p>2024 spots</p>
-     </div>
+    </footer>
   </body>
 </html>
