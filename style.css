@@ -11,20 +11,13 @@ body{
     width: 1440px;
     height: 1416px;
     background: rgba(252, 245, 229, 1);
-
-body {
-  background: rgba(252, 245, 229, 1);
-  width: 1440px;
-  height: 1416px;
-
 }
 
 /*Header*/
 .logo-icon {
   width: 1440px;
   height: 46px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   background: rgba(255, 255, 255, 0.8);
 }
   
