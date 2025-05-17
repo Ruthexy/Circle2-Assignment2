@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spots</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -20,22 +27,29 @@
     <main>
       <!-- Profile Section -->
       <section class="profile">
-        <img src="assets/Avatar@2x.png" alt="Profile photo" />
-        <div class="profile-details">
-          <h2>
-            Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara Akon...
-          </h2>
-          <p>
-            Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
-            singer, record producer, and entrepreneur. An influential figure in
-            modern world...
-          </p>
-          <div class="edit-profile">
-            <a href="#">Edit Profile</a>
+        <div class="profile-container">
+          <div class="img-details">
+            <img src="assets/Avatar@2x.png" alt="Profile photo" />
+            <div class="profile-details">
+              <h2>
+                Aliaune Damala Bouga Time Bongo Puru Nacka Lu Lu Lu Badara
+                Akon...
+              </h2>
+              <p>
+                Known mononymously as Akon (/ˈeɪkɒn/), is a Senegalese-American
+                singer, record producer, and entrepreneur. An influential figure
+                in modern world...
+              </p>
+              <div class="edit-profile">
+                <a href="#"> <i class="fa-solid fa-pen"></i> Edit Profile</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="new-post">
-          <button>+ New Post</button>
+
+          <div class="new-post">
+            <div></div>
+            <button>+ New Post</button>
+          </div>
         </div>
       </section>
 
@@ -45,12 +59,7 @@
           <img src="./assets/Image-1.png" alt="Val Thorens" class="img1" />
           <footer class="card-footer">
             <span>Val Thorens</span>
-            <img
-              src="./assets/LikeIcon.svg"
-              alt="Like icon"
-              width="20px"
-              height="20px"
-            />
+            <i class="fa-regular fa-heart"></i>
           </footer>
         </article>
 
@@ -62,12 +71,7 @@
           />
           <footer class="card-footer">
             <span>Restaurant terrace</span>
-            <img
-              src="./assets/LikeIcon.svg"
-              alt="Like icon"
-              width="20px"
-              height="20px"
-            />
+            <i class="fa-regular fa-heart"></i>
           </footer>
         </article>
 
@@ -75,12 +79,7 @@
           <img src="./assets/Image-3.png" alt="An outdoor cafe" class="img3" />
           <footer class="card-footer">
             <span>An outdoor cafe</span>
-            <img
-              src="./assets/LikeIcon.svg"
-              alt="Like icon"
-              width="20px"
-              height="20px"
-            />
+            <i class="fa-regular fa-heart"></i>
           </footer>
         </article>
 
@@ -92,12 +91,7 @@
           />
           <footer class="card-footer">
             <span>A very long bridge, over the forest...</span>
-            <img
-              src="./assets/LikeIcon.svg"
-              alt="Like icon"
-              width="20px"
-              height="20px"
-            />
+            <i class="fa-regular fa-heart"></i>
           </footer>
         </article>
 
@@ -109,12 +103,7 @@
           />
           <footer class="card-footer">
             <span>Tunnel with morning light</span>
-            <img
-              src="./assets/LikeIcon.svg"
-              alt="Like icon"
-              width="20px"
-              height="20px"
-            />
+            <i class="fa-regular fa-heart"></i>
           </footer>
         </article>
 
@@ -122,12 +111,7 @@
           <img src="./assets/Image-6.png" alt="Mountain house" class="img6" />
           <footer class="card-footer">
             <span>Mountain house</span>
-            <img
-              src="./assets/LikeIcon.svg"
-              alt="Like icon"
-              width="20px"
-              height="20px"
-            />
+            <i class="fa-regular fa-heart"></i>
           </footer>
         </article>
       </section>
@@ -136,7 +120,9 @@
     <!-- Footer -->
     <footer>
       <div class="copyright">
-        <p>2024 © Spots</p>
+        <div class="copy-container">
+          <p>2024 © Spots</p>
+        </div>
       </div>
     </footer>
   </body>
