@@ -152,7 +152,7 @@ main {
   border: none;
   cursor: pointer;
   transition: all .8s ease;
-  font-family: "Poppins";
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
@@ -211,6 +211,13 @@ main {
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 20px;
+}
+
+.gallery-item img {
+  width: 413px;
+  height: 413px; /* Adjust height as needed */
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .fa-heart {
