@@ -215,7 +215,7 @@ main {
 
 .gallery-item img {
   width: 413px;
-  height: 413px; /* Adjust height as needed */
+  height: 413px; /* Adjust height as needed - Last two img in gallery resized for uniformity*/
   object-fit: cover;
   border-radius: 12px;
 }
