@@ -110,6 +110,91 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderCards();
 
+  // Edit Profile Modal
+  const editBtn = document.querySelector(".edit-profile a");
+  editBtn.addEventListener("click", () => {
+    const nameElem = document.querySelector(".profile-details h2");
+    const descElem = document.querySelector(".profile-details p");
+    const imgElem = document.querySelector(".img-details img");
+
+    const modal = createModal(`
+      <h2>Edit Profile</h2>
+      <form id="edit-profile-form">
+        <input type="text" id="profile-name" placeholder="Name" value="${nameElem.textContent}" required minlength="2" maxlength="50" />
+        <textarea id="profile-desc" placeholder="Description" required minlength="5" maxlength="160">${descElem.textContent}</textarea>
+        <input type="file" id="profile-img" accept="image/*" />
+        <button type="submit">Save</button>
+      </form>
+    `);
+
+    modal.querySelector("#edit-profile-form").onsubmit = (e) => {
+      e.preventDefault();
+      const name = modal.querySelector("#profile-name").value.trim();
+      const desc = modal.querySelector("#profile-desc").value.trim();
+      const file = modal.querySelector("#profile-img").files[0];
+
+      nameElem.textContent = name;
+      descElem.textContent = desc;
+       if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          imgElem.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+
+      modal.remove();
+    };
+  });
+
+  // New Post Modal
+  const newPostBtn = document.querySelector(".new-post button");
+  newPostBtn.addEventListener("click", () => {
+    const modal = createModal(`
+      <h2>New Post</h2>
+      <form id="new-post-form">
+        <input type="text" id="post-title" placeholder="Title" required minlength="2" maxlength="100" />
+        <input type="file" id="post-img" accept="image/*" required />
+        <button type="submit" disabled>Create</button>
+      </form>
+    `);
+
+    const form = modal.querySelector("#new-post-form");
+    const titleInput = modal.querySelector("#post-title");
+    const imgInput = modal.querySelector("#post-img");
+    const submitBtn = form.querySelector("button");
+
+    const validate = () => {
+      const titleValid = titleInput.value.trim().length >= 2;
+      const fileValid = imgInput.files.length > 0;
+      submitBtn.disabled = !(titleValid && fileValid);
+    };
+
+     titleInput.addEventListener("input", validate);
+    imgInput.addEventListener("change", validate);
+
+    form.onsubmit = (e) => {
+      e.preventDefault();
+      const title = titleInput.value.trim();
+      const file = imgInput.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        cardsData.unshift({
+          title,
+          image: e.target.result,
+          liked: false,
+        });
+        renderCards();
+        modal.remove();
+      };
+      reader.readAsDataURL(file);
+    };
+  });
+
+
+
   // Styles for modals
   const modalStyle = document.createElement("style");
   modalStyle.textContent = `
